@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="pagamento_style.css">
+</head>
+</html>
+<header>
+    <nav id="inicial">
+        <p>15% de desconto para clientes regulares...    Cadastre-se na cantina presencialmente!</p>
+    </nav>
+    <nav id="principal">
+        <ul>
+            <li><a class="outras" href="index.html">Home</a></li>
+            <li><a class="outras" href="cardapio.html">Cardápio</a></li>
+        </ul>
+        <a id="logo" href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+        <ul>
+            <li><a class="outras" href="contato.html">Suporte</a></li>
+            <li><a class="carrinho" href="carrinho.html"><img src="imagens/imgcarrinho.png" alt=""></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h2>Quase lá! Segura a fome um pouco mais...</h2>
+    <section class="container">
+        <div class="left-half">
+            <div class="finalizar-compra">
+                <p class="cabeçalho"><b>Método de pagamento</b></p>
+                <input type="radio" id="cartao" name="tipo_pag" value="cartao">
+                <label style="color: rgb(0, 0, 0)" for="cartao">Cartão</label>
+                <p><b>Selecionar Cartão</b></p>
+                <select class="grande2">
+                    <option value="0"selected="crédito">Mastercard(Crédito)[Termina em 2404]
+                    <option value="1">Mastercard(Débito)[Termina em 2404]</option>
+                </select><br>
+                <p></p>
+                <input type="radio" id="PIX" name="tipo_pag" value="Pix">
+                <label style="color: black" for="PIX">PIX</label><br>
+                <p></p>
+                <input type="submit" value="Enviar">
+                <p>Lembre-se de salvar ou imprimir o comprovante!</p>
+            </div>  
+            <div class="rodape">
+                <p class="cabeçalho"><b>Fechar pagamento:</b></p>
+                <div id="carrinho">
+                    <p>2x Coxinha</p>
+                    <p>2x Coca-Cola</p>
+                    <p>1x Bolo de Chocolate</p>
+                    <p>1x Tapioca com ovo</p>
+                </div>
+            <p> Tem certeza que é tudo? O total do pedido é: R$21,50</p>
+            <input type="submit" value="Confirmar">
+            <p>Para imprimir o comprovante, clique no botão de impressora:</p>
+            <button><img class="iconeimpressora" src="imagens/comprovante1.png"></button>
+            <br>
+            <p>Para salvar e enviar, clique no botão de disco:</p>
+            <button><img class="iconesalvar" src="imagens/salvarreal.png"></button>
+            </div>
+            <div class="cartão">
+                <p style="text-align:center">
+                <p class="cabeçalho"><b>-Adicionar cartão-</b><p>
+                <label for="cartao">Tipo do cartão: <br></label>
+                <select class="grande"><option value="0"selected="crédito">Crédito<option value="1">Débito</option></select><br>
+                <label for="numero">Número do cartão:</label><br> 
+                <input type="text" id="numero" name="numero" value=""><br>
+                <label for="nome">Nome no cartão:</label><br>
+                <input type="text" id="nome" name="nome" value=""><br>
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv" name="cvv" value=""><br>
+                Data de vencimento:<br>
+                <select><option value="0" selected="mês">Mês<option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><select style="width:60px" name="ano"><option value="2023" selected="">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option><option value="2041">2041</option><option value="2042">2042</option><option value="2043">2043</option></select><br>
+                <p></p>
+                <input type="submit" value="Salvar">
+                </p>
+            </div>
+            </div>
+        <div class="right-half">
+            <div class="imagem">
+                <p class="cabeçalho"><b>Aceitamos as seguintes bandeiras:</b></p>
+                <img class="bandeiras" src="imagens/cartões.png" alt="02_Mobile_Passar_Maquininha.jpg">
+                <p><img class="maquina" src="imagens/cartão.jpg"></p>
+                <p class="cabeçalho"><b>Tenha uma boa refeição!</b></p>
+                <p><img src="imagens/comida.jpg" ></p>
+                <p><b>Descontos de até 10% à vista!</b></p>
+                <p id="final">Parcelamos em no máximo 3x sem juros!</p>
+            </div>
+            <div class="opix">
+                <p class="cabeçalho"><b>Aqui está o nosso QR CODE</b></p>
+                <img id="codqr" src="imagens/codigoqr.png" alt="02_Mobile_Passar_Maquininha.jpg">
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div id="footer">
+        <h1>Categorias</h1>
+        <h1>Suporte</h1>
+        <div class="opc">
+            <a href="cardpiosalgado.html">Salgados</a>
+            <a href="cardapiodoces.html">Doces</a>
+            <a href="cardapiobebidas.html">Bebidas</a>
+        </div>
+        <div class="opc">
+            <a href="contato.html">Quem somos nós?</a>
+            <a href="#">Dúvidas frequentes</a>
+            <a href="contato.html">Fale Conosco!</a>
+        </div>
+    </div>
+    <img src="imagens/logo sem fundo.png" alt=""><div id="footer">
+        <h1>Eventos</h1>
+        <h1>Políticas e diretrizes</h1>
+        <div class="opc">
+            <a href="#">Promoções ativas</a>
+            <a href="#">Resgate seu desconto</a>
+            <a href="#">Cupom de desconto</a>
+        </div>
+        <div class="opc">
+            <a href="#">Política de privacidade</a>
+            <a href="#">Termo de responsabilidade</a>
+            <a href="#">Política de reembolso</a>
+        </div>
+    </div>
+</footer>
+<h1 id="fim">© Alfa e Ômega. Todos os direitos reservados.</h1>
+</html>

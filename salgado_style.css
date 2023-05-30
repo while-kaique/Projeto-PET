@@ -1,0 +1,176 @@
+:root{
+    --yellow: #fbec81;
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+
+::-webkit-scrollbar-track {
+    background: #fdfd96;
+}
+
+body{
+    background-color: #adeb9a;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+#inicial{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    padding: 2rem 9%;
+}
+#textini{
+    padding-bottom:  5px;
+    background-color: #9DDDCD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    box-shadow: inset 0px 5px 10px -8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+        text-transform: uppercase;
+    }
+}
+
+h1{
+    background-color: #9DDDCD;
+    padding-bottom:  5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    display: grid;
+    margin-top: 1rem;
+    background-color: #3e98c24c;
+    padding-bottom: 0;
+    border-radius:5rem ;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #7cb5ff78;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.products .box-container .box .descript{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color:var(--red);
+    background: #FF6961;
+    z-index: 1 ;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display:flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--red);
+    color: rgb(242, 241, 239);
+    text-transform: uppercase;
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid white;
+    border-right: .1rem solid white;
+    width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background-color: #3e4448;
+}
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fbec81;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: #579444;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}

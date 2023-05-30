@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ff6961;
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+#inicial p:hover{
+    color: #ff6961;
+    font-size: 1.02rem;
+    cursor: pointer;
+    transition: .7s;
+}
+
+#inicial p:not(:hover) {
+    color: white;
+    font-size: 1rem;
+    transition: .6s;
+}
+
+nav {
+    background: #fdfd96;
+    height: 100px;
+    width: 100%;
+}
+
+img {
+    padding: 5px 0px 5px 0px;
+}
+
+nav#inicial {
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 100;
+    height: 6vh;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.432);
+}
+
+nav#inicial p {
+    text-align: center;
+    color: white;
+}
+
+nav#principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+}
+
+nav#principal ul{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 35vw;
+
+}
+
+nav ul li a.outras {
+    color: #000000;
+    font-size: 1.7rem;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+
+a.outras:hover{
+    border-bottom: 1.5px solid black;
+}
+.carrinho:hover{
+    border-bottom: 0px;
+}
+a.outras:hover{
+    color: #ff6961;
+}
+
+
+a.outras:not(:hover) {
+    border-bottom: 0px solid rgb(100, 100, 100);
+}
+
+footer {
+    background-color: #F1F1F1;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div#footer {
+    font-size: .6rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 70px;
+    width: 40%;
+}
+
+#footer h1 {
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+}
+
+div.opc {
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+.opc a {
+    margin: 4px 0px;
+    color: gray;
+}
+
+.opc a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 20%; 
+    margin-top: 10px;
+    margin-bottom: auto;
+    align-items: center;
+
+}
+
+h1#fim {
+    width: 100%;
+    text-align: center;
+    color: #929292b7;
+    background-color: white;
+    cursor: default;
+    font-size: 1rem;
+    padding: 10px 0px;
+    font-weight: 100;
+}
